@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+
+    var user1 = {name : "nerd", org: "dev"};
+    var user2 = {name : "nerd", org: "dev"};
+    var eq = user1 == user2;
+    alert(eq); // gives false
+
+
+    <!-- solution -->
+
+    var eq = Object.toJSON(user1) == Object.toJSON(user2);
+    alert(eq);
+
+
+
+</body>
+
+</html>
